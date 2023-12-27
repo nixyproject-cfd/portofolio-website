@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#FFFFFF] text-[#282828] tracking-wide
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl
+  }
+
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply shadow-lg shadow-red-400 rounded-xl uppercase /*bg-gradient-to-r*/ bg-[#FF0000] /*to-[#ff5959]*/
+    text-white hover:scale-105 duration-200 ease-out
+  }
+
+}
